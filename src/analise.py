@@ -11,10 +11,12 @@ melhor_cliente = df.groupby('cliente')['total'].sum().sort_values(ascending=Fals
 top = melhor_cliente.index[0]
 valor_cliente = melhor_cliente.iloc[0]
 vendas_por_mes = df.groupby('mes')['total'].sum().sort_index()
+
+vendas_por_mes.index = ['Jan', 'Fev', 'Mar', 'Abr']
 vendas_por_mes.plot(kind='bar', color='skyblue')
 plt.xlabel('Meses')
-plt.ylabel('Total')
-plt.title("Vendas por mês")
+plt.ylabel('Faturamento (R$)')
+plt.title("Faturamento por mês")
 plt.xticks(rotation=0)
 plt.tight_layout()
 
