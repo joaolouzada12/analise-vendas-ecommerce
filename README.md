@@ -1,43 +1,105 @@
-# E-commerce Sales Analysis
+# 📊 E-commerce Sales Analysis
 
-This project analyzes simulated e-commerce sales data using Python and Pandas.
+End-to-end data analysis project using Python and Pandas to extract business insights from simulated e-commerce sales data.
 
-## Project Structure
+---
 
+## 🎯 Objective
+
+The goal of this project is to analyze sales data and extract meaningful insights that could support business decisions, such as identifying top-performing products, sellers, and customers, as well as understanding sales trends over time.
+
+---
+
+## 🛠 Technologies
+
+* Python
+* Pandas
+* Matplotlib
+
+---
+
+## 📊 Dataset
+
+The dataset contains simulated e-commerce sales data, including:
+
+* Sale ID
+* Date
+* Product
+* Customer
+* Seller
+* Price
+* Quantity
+
+---
+
+## 🔥 Key Insights
+
+* 💰 **Total Revenue:** R$ 80,860
+* 🖱 **Best-selling Product:** Mouse (77 units sold)
+* 🧑‍💼 **Top Seller:** Ana (R$ 33,530 in sales)
+* 🛍 **Top Customer:** Cliente_7 (R$ 10,820 in purchases)
+* 📈 **Peak Sales Month:** February
+* 📉 Sales showed a decline after February, with a significant drop in April
+
+---
+
+## 📈 Visualization
+
+The project includes a bar chart that displays total sales per month, allowing clear visualization of trends and performance over time.
+
+---
+
+## 🧱 Project Structure
+
+```
 analise-vendas-ecommerce/
 │
-├── dados/
-│   └── vendas.csv
+├── data/
+│   ├── raw/
+│   │   └── vendas.csv
+│   └── processed/
+│       └── vendas_tratadas.csv
 │
 ├── src/
-│   └── gerar_dados.py
+│   ├── gerar_dados.py
+│   ├── limpar_dados.py
+│   └── analise.py
 │
-└── README.md
+├── README.md
+└── .gitignore
+```
 
-## Technologies
+---
 
-- Python
-- Pandas
-- Matplotlib
+## ▶️ How to Run
 
-## Dataset
+1. Generate or use the dataset
+2. Run data cleaning:
 
-The dataset contains simulated e-commerce sales including:
+```
+python src/limpar_dados.py
+```
 
-- sale ID
-- date
-- product
-- customer
-- seller
-- price
-- quantity
+3. Run analysis:
 
-## Goals
+```
+python src/analise.py
+```
 
-The objective of this project is to analyze:
+---
 
-- total revenue
-- best-selling products
-- sales by seller
-- sales over time
-- top customers
+## 🚀 About the Project
+
+This project demonstrates the full data analysis workflow:
+
+* Data generation
+* Data cleaning and transformation
+* Exploratory data analysis
+* Business insights extraction
+* Data visualization
+
+---
+
+## 👨‍💻 Author
+
+Developed by João Louzada
