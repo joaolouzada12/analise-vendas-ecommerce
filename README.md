@@ -99,6 +99,17 @@ This project demonstrates the full data analysis workflow:
 * Data visualization
 
 ---
+## 📂 Dataset
+
+The dataset used in this project is not included in the repository due to its size.
+
+You can download it from the official Olist dataset:
+
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+After downloading, place the files inside:
+
+data/raw/
 
 ## 👨‍💻 Author
 
